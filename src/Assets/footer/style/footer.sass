@@ -1,0 +1,72 @@
+@import '../../../index.sass'
+
+footer
+    @extend %default-flexbox
+    @extend %default-font
+    padding-block: 8rem
+    border-bottom: 10px solid $primary-bg-color
+    gap: 10rem
+    align-items: flex-end
+    flex-wrap: wrap
+
+    .social-media
+        @extend %default-flexbox
+        flex-direction: column 
+        align-items: baseline
+        gap: 12px
+
+        img
+            width: 228px
+            object-fit: contain 
+
+        .icons
+            @extend %default-flexbox
+            justify-content: space-between
+            width: 221px
+            padding-inline: 4px
+            img
+                width: 25px
+                object-fit: contain 
+
+    .trust-shopping
+        @extend %default-flexbox
+        flex-direction: column  
+        align-items: baseline
+        gap: 6px
+
+    .trust-sertificate
+        @extend %default-flexbox
+        flex-direction: column  
+        align-items: baseline
+        gap: 6px
+
+    .information
+        @extend %default-flexbox
+        flex-direction: column  
+        align-items: baseline
+        gap: 6px
+
+        a
+            text-decoration: none
+            color: #fff 
+
+    // 425px ve altı için media query
+    @media (max-width:440px)
+        flex-direction: column
+        align-items: center
+        gap: 2rem
+
+        .social-media
+            order: 1 // İlk sırada kalacak
+
+        .information
+            order: 2 // İkinci sırada olacak
+            gap: 12px !important
+
+        .trust-shopping,
+        .trust-sertificate
+            order: 3 // Üçüncü sırada beraber yer alacaklar
+
+        .social-media, .trust-shopping, .trust-sertificate, .information
+            align-items: center // Tüm bölümler ortalansın
+            text-align: center // Metinler ortalansın

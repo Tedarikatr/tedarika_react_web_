@@ -1,0 +1,76 @@
+@import '../../../index'
+
+.download-container
+    @extend %default-flexbox
+    @extend %default-font
+    background-color: #ADD28E
+    color: #003032
+    padding-top: 2rem
+    justify-content: space-around
+    gap: 1REM
+    flex-wrap: wrap
+
+    .text-content
+        display: flex
+        flex-direction: column
+        gap: 16px
+        h2
+            font-size: clamp(1.5rem, 5vw, 2rem)
+            font-weight: 700
+            line-height: 44px
+        p
+            width: 450px
+            min-width: 350px
+            font-size: 1rem
+            font-weight: 300
+            line-height: 22px
+
+        .action-button
+            @extend %default-flexbox
+            gap: 1.5rem
+            button
+                @extend %default-flexbox
+                align-items: center
+                padding: 8px 18px
+                border-radius: 8px
+                background-color: #004F52
+                border: none
+                width: 181px
+                gap: 0.5rem
+                font-size: 16px
+                font-weight: 600
+                color: #fff
+                transition: all 400ms
+                &:hover
+                    background-color: #033a3d
+
+                img
+                    filter: invert(1)
+
+    .image
+        display: flex
+        img
+            width: 100%
+            height: 100%
+
+@media (max-width:768px)
+    .download-container
+        justify-content: center
+    .text-content
+        text-align: center
+        p
+            width: 90% !important
+
+    .action-button
+        gap: 2px !important
+        button
+            font-size: 14px !important
+            padding: 6px 8px !important
+            gap: 0.5rem !important
+            background-color: #0B2000   !important
+            height: 43px !important
+            width: 150px !important
+            img
+                width: 20px !important
+                height: 20px !important
+                object-fit: contain !important

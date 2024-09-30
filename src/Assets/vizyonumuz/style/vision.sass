@@ -1,0 +1,107 @@
+@import '../../../index'
+    
+.vision-container
+    @extend %default-flexbox
+    @extend %default-font
+    flex-direction: column
+    padding-block: 6rem
+    margin-left: 2rem
+    gap: 1rem
+
+    .content-header
+        margin-bottom: 4rem
+        p
+            width: 1221px
+            font-size: 16px
+            font-weight: 300
+            line-height: 22px
+
+        .head-title
+            @extend %default-font
+            @extend %default-flexbox
+            align-items: baseline
+            width: fit-content
+            font-size: 2rem
+            font-weight: 600
+            line-height: 44px
+            padding: 0px 40px 8px 0px
+            border-bottom: 1px solid #C8EEA8
+            margin-block: 1rem
+
+    .vision-boxs
+        @extend %default-flexbox
+        gap: 81px
+        padding-block: 10px
+        flex-wrap: wrap
+
+        .box-content
+            background-color: #C8EEA8
+            max-width: 216px
+            min-width: 200px
+            height: 224px
+            border-radius: 10px
+            text-align: center
+            color: black
+
+            .image
+                height: 3rem
+                position: relative
+
+                img
+                    width: 96px
+                    height: 96px
+                    object-fit: contain
+                    position: absolute
+                    top: -50px
+                    left: 50%
+                    transform: translateX(-50%)
+
+            .text
+                height: 160px
+
+            h3
+                font-size: 20px
+                font-weight: 800
+                line-height: 28px
+                color: #002021
+
+            p
+                font-size: 14px
+                font-weight: 300
+                line-height: 20px
+                padding: 0px 10px 10px 10px
+
+@media (max-width:1440px)
+    .content-header
+        p
+            width: 100% !important
+    .vision-boxs
+        gap: 40px !important
+        .box-content
+            min-width: 0px !important
+            h3
+                font-size: 16px
+                line-height: 24px
+            p
+                font-size: 12px
+                line-height: 20px  
+
+@media (max-width:768px)
+    .vision-container
+        padding-inline: clamp(0.2rem, 2vw, 1rem) !important
+        margin-left: 0rem !important
+
+        .vision-boxs
+            gap: 2rem !important
+            .box-content
+                width: 155px !important
+
+                p 
+                    font-size: 12px !important
+
+                h3
+                    font-size: 16px !important
+
+        .content-header
+            p
+                width: 100%

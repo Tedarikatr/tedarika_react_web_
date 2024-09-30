@@ -1,0 +1,122 @@
+// VERIABLES
+@import '../../../index.sass'
+
+html 
+  scroll-behavior: smooth
+
+
+
+header
+    .header-container
+        @extend %default-flexbox
+        justify-content: space-between
+        height: $default-height
+        padding: 28px 76px
+
+        .logo
+            width: 110px
+            height: 40px
+
+            img 
+                width: 100%
+                height: 100%
+                object-fit: cover
+                object-position: center
+
+        .text-buttons 
+            @extend %default-flexbox
+            justify-content: space-between
+            width: 611px
+            gap: $default-gap
+            height: $default-height
+
+            a
+                @extend %default-font
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                padding-inline: 6px
+
+                &:hover
+                    border-bottom: 1px solid #4EAB33
+
+        .action-buttons
+            @extend %default-flexbox
+            min-width: 252px
+            gap: $default-gap
+            height: $default-height
+
+            button
+                @extend %default-font
+                @extend %default-flexbox
+                gap: 8px
+                height: $default-height
+                padding: 10px
+                border: 1px solid #C8EEA8
+                border-radius: 10px
+                background-color: transparent
+                transition: all 300ms
+                cursor: pointer
+
+                &:hover
+                    background-color: #4EAB33
+                    border: 1px solid #4EAB33
+
+
+            #contact
+                gap: 10px !important
+    
+    .mobile-menu
+        display: none
+
+@media (max-width: 1025px) 
+    .header-container
+        padding-inline: 16px !important
+
+        .text-buttons
+            justify-content: center !important
+            gap: 8px !important
+
+
+
+    
+
+@media (max-width: 839px) 
+
+    .action-buttons,
+    .text-buttons
+        display: none  !important
+
+    .mobile-menu
+        display: flex !important
+        align-items: center
+        height: 100%
+
+        img 
+            width: 20px
+            height: 20px
+
+    .header-container
+        padding-inline: 16px !important
+
+        .logo
+            img 
+                width: 78px
+                height: 28px
+
+:where(.ant-dropdown-menu) 
+  background-color: #ADD28E !important
+
+  button
+    @extend %default-flexbox
+    gap: 12px
+    justify-content: space-between
+    color: #003032
+    padding: 10px
+    background-color: transparent
+    border: 1px solid #003032
+    border-radius: 10px
+
+:where(.ant-dropdown-menu-item) 
+  background-color: #ADD28E !important
+

@@ -1,0 +1,109 @@
+@import '../../../index.sass'
+    
+.solution-container
+    @extend %default-flexbox
+    text-align: left
+    flex-direction: column
+    min-height: 500px
+    gap: 12rem
+    padding-block: 4rem
+    padding-inline: 12rem
+
+    .solution-box
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+
+        .head-title
+            @extend %default-font
+            justify-content: left
+            font-size: 1.7rem
+            font-weight: 600
+            line-height: 44px
+            border-bottom: 1px solid #C8EEA8
+            padding: 0px 40px 8px 0px
+            width: fit-content
+
+        .solution-section
+            @extend %default-flexbox
+            align-items: flex-start
+            gap: 12rem
+            flex-wrap: wrap
+
+            .solution-buttons
+                @extend %default-flexbox
+                flex-direction: column
+                flex-wrap: wrap
+                gap: 8px
+                padding-block: 12px
+
+                button
+                    @extend %default-font
+                    @extend %default-flexbox
+                    justify-content: left
+                    gap: 8px
+                    padding: 10px
+                    border: 1px solid #4dab3300
+                    border-radius: 10px
+                    background-color: transparent
+                    transition: all 300ms
+                    min-width: 250px
+                    cursor: pointer
+
+                    &:hover
+                        background-color: #4EAB33
+                        border: 1px solid #4EAB33
+
+            .change-part
+                @extend %default-flexbox
+                gap: 8px
+                padding-block: 12px
+                flex-wrap: wrap
+
+                .text
+                    @extend %default-flexbox
+                    @extend %default-font
+                    flex-direction: column
+                    gap: 16px
+                    align-items: flex-start
+                    max-width: 530px
+                    min-width: 350px
+                    min-height: 150px
+
+                    p
+                        font-size: 16px
+                        font-weight: 300
+                        line-height: 24px
+
+@media (max-width:1440px)
+    .solution-container
+        padding-inline: 0px !important
+
+        .solution-box
+            justify-content: center !important
+            align-items: center !important
+
+            .solution-section
+                gap: 1rem
+                width: 100% !important
+
+                .solution-buttons
+                    flex-direction: row !important
+                    width: 100% !important
+
+                    button
+                        width: 150px !important
+                        font-size: 10px !important
+                        font-weight: 400 !important
+                        min-width: 170px !important
+
+                        img
+                            width: 14px !important
+                            object-fit: contain !important
+
+
+            .change-part
+                flex-wrap: wrap !important
+                .text
+                    padding-inline: 1.5rem !important
+                    min-width: 100px !important

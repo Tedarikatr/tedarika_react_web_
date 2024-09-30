@@ -1,0 +1,111 @@
+@import '../../../index'
+    
+.why-container
+    @extend %default-flexbox
+    flex-direction: column
+    min-width: 100%
+    background-color: #ADD28E
+    z-index: 99
+    min-height: 680px
+    gap: 2rem
+
+    .info-text-mobile
+        display: none
+
+    h2
+        @extend %default-font
+        font-size: 32px
+        font-weight: 800
+        color: #003032
+        line-height: 44px
+
+    .why-box
+        @extend %default-flexbox
+        width: 70%
+        justify-content: space-around
+        margin-left: 15em
+
+        .info-text
+            @extend %default-flexbox
+            flex-direction: column
+            color: #003032
+            gap: 1.5rem
+
+            .text-box:nth-child(1)
+                padding-left: 1rem
+
+            .text-box:nth-child(2)
+                padding-left: 7rem
+
+            .text-box:nth-child(3)
+                padding-left: 12rem
+
+            .text-box:nth-child(4)
+                padding-left: 7rem
+
+            .text-box:nth-child(5)
+                padding-left: 1rem
+
+            .text-box
+                @extend %default-flexbox
+                gap: 1rem
+                width: 100%
+
+                .title
+                    min-width: 450px
+
+                p
+                    max-width: 300px
+
+@media (max-width: 1280px)
+    .why-box
+        width: 95% !important
+        gap: 10px
+        img
+            width: 172px
+
+        margin-left: 0px !important
+        .info-text
+            display: none !important
+
+        .info-text-mobile
+            display: flex
+            flex-direction: column
+            gap: 12px
+
+            .header-content
+                display: flex
+                align-items: center
+                gap: 4px
+
+                h3
+                    font-size: 14px
+                    font-weight: 600
+                    color: #003032
+                    line-height: 20px
+
+                img
+                    width: 30px
+                    object-fit: contain
+            .title
+                width: 170px !important
+                p
+                    font-size: 12px !important
+
+            .text-box:nth-child(1)
+                padding-left: 0px !important
+
+            .text-box:nth-child(2)
+                padding-left: 0px !important
+
+            .text-box:nth-child(3)
+                padding-left: 0px !important
+
+            .text-box:nth-child(4)
+                padding-left: 0px !important
+
+            .text-box:nth-child(5)
+                padding-left: 0px !important
+
+            
+            

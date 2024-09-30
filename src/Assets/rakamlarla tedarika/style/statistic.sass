@@ -1,0 +1,65 @@
+@import '../../../index'
+    
+.statistic-container
+    @extend %default-flexbox
+    flex-direction: column
+    text-align: left
+    gap: 3rem
+    padding-block: 6rem  
+    padding-inline: 12rem
+
+    .statistic-box
+        .head-title
+            @extend %default-font
+            justify-content: left
+            font-size: 32px
+            font-weight: 600
+            line-height: 44px
+            text-align: center
+            border-bottom: 1px solid #ffffff
+            padding: 0px 40px 8px 0px
+            width: fit-content
+            margin-bottom: 3rem
+
+        .statistic-content
+            @extend %default-flexbox
+            @extend %default-font
+            flex-wrap: wrap
+            justify-content: space-between
+            gap: 2rem
+            padding-left: 2rem
+
+            .statistic-item
+                padding-inline: 2rem
+                border-left: 5px solid #C8EEA8
+
+                h1
+                    font-size: 48px
+                    font-weight: 700
+                    line-height: 66px
+
+                p
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 28px
+
+@media (max-width:1440px)
+    .statistic-container    
+        padding-inline: 1rem
+        padding-block: 1rem !important
+        .statistic-box
+            .head-title
+                font-size: 20px !important
+                line-height: 44px !important
+        .statistic-content
+            padding-left: 0rem !important
+            .statistic-item
+                border-color: #004F52 !important
+                padding-inline: 8px !important
+                min-width: 120px 
+                h1
+                    font-size: 24px !important
+                    line-height: 44px !important
+                p
+                    font-size: 12px !important
+                    line-height: 24px !important
