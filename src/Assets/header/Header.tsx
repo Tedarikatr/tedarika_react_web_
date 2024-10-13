@@ -80,7 +80,7 @@ const Header = () => {
                         Rakamlarla Tedarika
                     </a> */}
                     <a href="#vision-container">
-                        Vizyonumuz
+                        Hakkımızda
                     </a>
                 </div>
                 <div className="action-buttons">
