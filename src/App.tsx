@@ -3,7 +3,7 @@ import Header from "./Assets/header/Header"
 import Download from "./Assets/hemen indir/download"
 import Hero from "./Assets/hero Box/Hero"
 import Why from "./Assets/Neden Tedarika/why"
-import Statistic from "./Assets/rakamlarla tedarika/statistic"
+//import Statistic from "./Assets/rakamlarla tedarika/statistic"
 import Vision from "./Assets/vizyonumuz/vision"
 import Solution from "./Assets/Çözümlerimiz/Solution"
 
@@ -15,7 +15,6 @@ function App() {
       <Hero />
       <Why />
       <Solution />
-      <Statistic />
       <Vision />
       <Download />
       <Footer />
