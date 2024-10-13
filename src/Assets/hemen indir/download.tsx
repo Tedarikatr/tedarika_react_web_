@@ -5,20 +5,19 @@ const Download = () => {
         <div className="download-container">
             <div className="text-content">
                 <h2>
-                    Tedarika'yı Hemen İndir
+                    Tedarika'yı Çok Yakında İndir
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. 
+                    Tedarika, çok yakında Google Play ve App Store'da! HORECA sektöründe tedarikçileri ve işletmeleri buluşturan en kapsamlı dijital pazaryerine erişim için hazır olun. Tedarika ile işletmenizin ihtiyaçlarını kolayca karşılayın ve ticaretin yeni standartlarına adım atın. Bizi takip edin ve ilk indirenlerden biri olun!
                 </p>
                 <div className="action-button">
-                    <button>
+                    <button disabled>
                         <img src="./images/platform-icon/android_icon.png" alt="Android Icon" />
-                        <span>Google Play</span>
+                        <span>Google Play (Yakında)</span>
                     </button>
-                    <button>
+                    <button disabled>
                         <img src="./images/platform-icon/apple_icon.png" alt="Apple Icon" />
-                        <span>App Store</span>
+                        <span>App Store (Yakında)</span>
                     </button>
                 </div>
             </div>

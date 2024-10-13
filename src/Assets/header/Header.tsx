@@ -55,7 +55,7 @@ const Header = () => {
           key: '6',
           label: (
             <a rel="noopener noreferrer" href="#vision-container">
-              Vizyonumuz
+              Hakkımızda
             </a>
           ),
         },
