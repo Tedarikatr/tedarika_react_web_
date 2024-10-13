@@ -5,7 +5,7 @@ const Vision = () => {
         <div id="vision-container" className="vision-container">
             <div className="content-header">
                 <div className="head-title">
-                    <h3>Vizyonumuz</h3>
+                    <h3>Hakkımızda</h3>
                 </div>
                 <p>
                     Tedarika, 2019 yılında faaliyete geçen Coşkunlar İç ve
