@@ -1,4 +1,5 @@
 {
+  "start": "react-scripts start",
   "name": "tedarika",
   "private": true,
   "version": "0.0.0",
@@ -18,8 +19,10 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@types/estree": "^1.0.6",
+    "@types/prop-types": "^15.7.13",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.1",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",

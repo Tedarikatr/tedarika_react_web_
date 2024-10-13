@@ -32,4 +32,4 @@ import "./style/statistic.sass"
 //     )
 // };
 
-export default Statistic;
+//export default Statistic;
