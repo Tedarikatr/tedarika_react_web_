@@ -43,14 +43,14 @@ const Header = () => {
             </a>
           ),
         },
-        {
-          key: '5',
-          label: (
-            <a rel="noopener noreferrer" href="#statistic-container">
-              Rakamlarla Tedarika
-            </a>
-          ),
-        },
+        // {
+        //   key: '5',
+        //   label: (
+        //     <a rel="noopener noreferrer" href="#statistic-container">
+        //       Rakamlarla Tedarika
+        //     </a>
+        //   ),
+        // },
         {
           key: '6',
           label: (
@@ -76,9 +76,9 @@ const Header = () => {
                     <a href="#solution-container">
                         Çözümlerimiz
                     </a>
-                    <a href="#statistic-container">
+                    {/* <a href="#statistic-container">
                         Rakamlarla Tedarika
-                    </a>
+                    </a> */}
                     <a href="#vision-container">
                         Vizyonumuz
                     </a>
